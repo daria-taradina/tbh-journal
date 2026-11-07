@@ -1,0 +1,4 @@
+/* PageHeader.module.css */
+.header { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
+.title { margin: 0; font-size: 1.75rem; }
+.actions { display: flex; gap: 0.5rem; }

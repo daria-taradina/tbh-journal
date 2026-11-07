@@ -1,0 +1,24 @@
+/* Button.module.css */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.button:disabled { opacity: 0.6; cursor: default; }
+
+.primary { background: var(--accent); color: var(--on-accent); }
+.primary:hover:not(:disabled) { background: var(--accent-hover); }
+
+.ghost { background: transparent; color: var(--text); border-color: var(--border); }
+.ghost:hover:not(:disabled) { background: var(--elevated); }
+
+.danger { background: transparent; color: var(--danger); border-color: var(--danger); }
+.danger:hover:not(:disabled) { background: rgba(229, 138, 138, 0.1); }

@@ -1,0 +1,4 @@
+/* Logo.module.css */
+.logo { display: flex; align-items: center; gap: 0.65rem; text-decoration: none; color: var(--text); }
+.logo img { border-radius: 0.5rem; }
+.name { font-family: var(--font-serif); font-size: 1.2rem; }

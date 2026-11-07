@@ -1,0 +1,7 @@
+/* Container.module.css */
+.container {
+  width: 100%;
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding: 1.5rem 1rem 4rem;
+}

@@ -1,0 +1,8 @@
+/* EmptyState.module.css */
+.empty {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: var(--muted);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}
