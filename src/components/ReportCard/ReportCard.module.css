@@ -1,0 +1,15 @@
+/* ReportCard.module.css */
+.card {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.15s;
+}
+.card:hover { border-color: var(--accent); }
+.range { display: block; font-family: var(--font-serif); font-size: 1.15rem; }
+.meta { display: block; color: var(--muted); font-size: 0.85rem; }
+.snippet { margin: 0.75rem 0 0; color: var(--muted); }

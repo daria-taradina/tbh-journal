@@ -1,0 +1,11 @@
+/* DeleteButton.module.css */
+.delete {
+  padding: 0.25rem 0.5rem;
+  background: none;
+  border: 0;
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.delete:hover { color: var(--danger); background: rgba(229, 138, 138, 0.1); }

@@ -6,13 +6,14 @@ type Props = {
   href: string;
   variant?: Variant;
   className?: string;
+  download?: boolean;
   children: React.ReactNode;
 };
 
-export default function ButtonLink({ href, variant = "primary", className = "", children }: Props) {
-  return (
-    <Link href={href} className={`${styles.button} ${styles[variant]} ${className}`}>
-      {children}
-    </Link>
-  );
+export default function ButtonLink({ href, variant = "primary", className = "", download, children }: Props) {
+  const cls = `${styles.button} ${styles[variant]} ${className}`;
+  if (download) {
+    return <a href={href} download className={cls}>{children}</a>;
+  }
+  return <Link href={href} className={cls}>{children}</Link>;
 }

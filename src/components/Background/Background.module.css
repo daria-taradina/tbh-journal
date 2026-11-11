@@ -1,0 +1,19 @@
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(45rem 35rem at 85% -5%, var(--glow-gold), transparent 70%),
+    radial-gradient(55rem 45rem at 0% 100%, var(--glow-blue), transparent 70%),
+    radial-gradient(40rem 30rem at 65% 105%, var(--glow-deep), transparent 70%),
+    var(--bg);
+}
+
+/* noise: an SVG turbulence filter, desaturated to grey grain */
+.grain {
+  position: absolute;
+  inset: 0;
+  opacity: var(--grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}

@@ -1,0 +1,4 @@
+/* Pagination.module.css */
+.pagination { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; margin-top: 1.5rem; }
+.status { color: var(--muted); font-size: 0.9rem; }
+.next { justify-self: end; }

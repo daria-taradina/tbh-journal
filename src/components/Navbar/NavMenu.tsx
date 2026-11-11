@@ -32,17 +32,17 @@ export default function NavMenu() {
   }
 
   return (
-    <div className={styles.menu} ref={ref}>
+    <div className={`${styles.menu} ${open ? styles.open : ""}`} ref={ref}>
       <button
+        type="button"
         className={styles.burger}
-        aria-label="Menu"
+        aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         onClick={() => setOpen((o) => !o)}
       >
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-             strokeWidth="2" strokeLinecap="round" aria-hidden="true">
-          <path d="M4 7h16M4 12h16M4 17h16" />
-        </svg>
+        <span />
+        <span />
+        <span />
       </button>
 
       {open && (
@@ -50,6 +50,7 @@ export default function NavMenu() {
           <Link href="/reports" className={styles.item} onClick={() => setOpen(false)}>
             Reports
           </Link>
+          <a href="/api/export" download className={styles.item}>Export data</a>
           <form action={logout} onSubmit={clearDraft}>
             <button type="submit" className={styles.item}>Log out</button>
           </form>

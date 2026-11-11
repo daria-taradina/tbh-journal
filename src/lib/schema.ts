@@ -17,3 +17,6 @@ export const reports = pgTable("reports", {
   content: jsonb("content").notNull(), // the structured report JSON
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 });
+
+export type Entry = typeof entries.$inferSelect;
+export type Report = typeof reports.$inferSelect;

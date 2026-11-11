@@ -1,0 +1,11 @@
+/* EntryCard.module.css */
+.card {
+  padding: 1.25rem 1.5rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.meta { display: flex; align-items: center; justify-content: space-between; gap: 1rem; color: var(--muted); font-size: 0.85rem; }
+.content { margin: 0.75rem 0 0; font-family: var(--font-serif); font-size: 1.05rem; line-height: 1.8; white-space: pre-wrap; overflow-wrap: anywhere; }

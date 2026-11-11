@@ -6,6 +6,7 @@
   --surface: #0b1431;
   --elevated: #141d3d;
   --border: #222c52;
+  --card-bg: rgba(11, 20, 49, 0.55);
 
   /* text */
   --text: #e8ecf6;
@@ -17,6 +18,16 @@
   --on-accent: #0a0f1f;
 
   --danger: #e58a8a;
+
+  --glow-gold: rgba(240, 197, 138, 0.20);
+  --glow-blue: rgba(48, 72, 170, 0.35);
+  --glow-deep: rgba(90, 60, 150, 0.18);
+  --grain-opacity: 0.12;
+
+    /* glass */
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: 24px;
 
   /* shape and layout */
   --radius: 1rem;
@@ -65,3 +76,15 @@ h1, h2, h3 {
 a { color: var(--accent); }
 
 button, input, textarea { font: inherit; }
+
+@media print {
+  [data-print="hide"] { display: none !important; }
+  html, body { background: #fff !important; }
+  body * {
+    color: #000 !important;
+    background: transparent !important;
+    border-color: #ccc !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+}
